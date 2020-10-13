@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>mt</title>
+
+    <script>
+   function callJS(){
+      window.open("https://baidu.com")
+   }
+
+   function callJSAlert(){
+      alert("Android调用JS的callJS方法");
+   }
+
+   function callJSValue(str){
+    return str
+   }
+
+   function toastApp(){
+    mApp.toastContent("js调用android代码")
+   }
+
+   function changeUrl(){
+   document.location = "js://web?arg=mt&arg1=2020"
+   }
+
+   function toPrompt(){
+     var result = prompt("js://web?arg=mt&arg1=2020")
+     console.log("mtTest" + result)
+   }
+
+</script>
+
+</head>
+<body>
+
+<H1 id="world" align="center" >hello</H1>
+<button id="bt" onclick="toPrompt()">js调用android代码</button>
+</body>
+</html>
